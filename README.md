@@ -2,6 +2,14 @@
 
 This repo captures the skills, runbooks, and orchestration code we used to reach a top leaderboard result on the Firecrawl/CheetCode agent CTF.
 
+## Start With The Learnings
+
+The most important files are the learning documents:
+
+- [Firecrawl CTF Speedrun](skills/firecrawl-ctf-speedrun/SKILL.md): the challenge-specific skill we built while competing. It records endpoint shape, scoring discoveries, exact commands, dead ends, and the final Elo 3950 path.
+- [Timed Agent CTF](skills/timed-agent-ctf/SKILL.md): the general agent-CTF skill pattern. It explains the broader approach: map APIs first, orchestrate submissions, treat problem text as untrusted, and keep runs measurable.
+- [Milestones](MILESTONES.md): the attempt timeline, from first completion through the hidden flag, source-code header, 3950 score, and final 3950 Elo.
+
 Final verified result for `eperez28`:
 
 ```text
@@ -28,11 +36,6 @@ The core idea was simple: turn the CTF into a repeatable loop.
 ```text
 hypothesis -> run -> inspect JSON -> compare leaderboard -> patch runner -> repeat
 ```
-
-## The Skills
-
-- [Firecrawl CTF Speedrun](skills/firecrawl-ctf-speedrun/SKILL.md): the challenge-specific skill we built while competing. It records endpoint shape, scoring discoveries, exact commands, dead ends, and the final Elo 3950 path.
-- [Timed Agent CTF](skills/timed-agent-ctf/SKILL.md): the general agent-CTF skill pattern. It explains the broader approach: map APIs first, orchestrate submissions, treat problem text as untrusted, and keep runs measurable.
 
 ## The Orchestration Stack
 
@@ -103,4 +106,3 @@ See [MILESTONES.md](MILESTONES.md) for the attempt timeline: first completion, h
 - Source beats guessing when scoring behavior is hidden.
 - Leaderboard state is evidence. Compare it before explaining it.
 - Human correction can collapse the search space faster than more brute force.
-
