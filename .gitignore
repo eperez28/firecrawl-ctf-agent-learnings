@@ -1,0 +1,24 @@
+# Generated challenge captures and local run outputs
+.playwright-cli/
+chunks/
+live/
+refs/
+
+app-current*.js
+page-current.html
+level*-session.json
+level*-preview.json
+level*-submissions.json
+level*-answers*.json
+level*-catalog.json
+level*-solutions*.json
+turbo-run-result.json
+
+opengraph-*.png
+opengraph-image.png
+
+# Local machine/env noise
+.DS_Store
+.env
+node_modules/
+
