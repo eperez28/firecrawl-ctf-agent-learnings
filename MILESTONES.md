@@ -70,7 +70,7 @@ That produced total score 3950.
 
 ## 10. Closed The Elo Gap
 
-The scoreboard showed score 3950 but Elo 3943. The first theory was retry count. Emanuel corrected it: there was no retry penalty.
+The scoreboard showed score 3950 but Elo 3943. The first theory was retry count. Emanuel corrected it: retries were free.
 
 That changed the search. We compared leaderboard rows and saw users with higher retry counts still had Elo 3950.
 
@@ -91,4 +91,3 @@ Score: 3950
 Solved: 60
 Time: 0s
 ```
-
